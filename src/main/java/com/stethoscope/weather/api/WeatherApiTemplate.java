@@ -54,7 +54,7 @@ public class WeatherApiTemplate {
                 .queryParam("base_time", "0500")
                 .queryParam("nx", x)
                 .queryParam("ny", y)
-                .build();
+                .build(true);
 
         return webClient.get()
                 .uri(uriComponents.toUri())
